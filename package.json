@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "stella-blog",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "author": {
+    "name": "Stella Kim",
+    "email": "stellakim1230@gmail.com"
   },
   "dependencies": {
     "gatsby": "^4.4.0",
@@ -35,7 +35,6 @@
   "devDependencies": {
     "prettier": "^2.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -43,7 +42,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/StellaKim1230/stella-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
