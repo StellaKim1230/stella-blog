@@ -3,7 +3,7 @@ module.exports = {
     title: `JiEun's Blog`,
     author: {
       name: `Kim Ji Eun`,
-      summary: `7년차, 프론트엔드 개발자 김지은 입니다.`,
+      summary: `7년차, 매일 행복을 꿈꾸는 프론트엔드 개발자 김지은 입니다.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

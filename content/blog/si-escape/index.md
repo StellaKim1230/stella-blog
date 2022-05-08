@@ -1,5 +1,6 @@
 ---
 title: SI 탈출 성공 스토리
+date: "2019-01-01"
 meta:
   - name: description
     content: SI업체 탈출에 성공하다
@@ -10,6 +11,8 @@ meta:
   - property: og:description
     content: SI업체 탈출에 성공하다
 ---
+
+<h2 id="second-heading">들어가며</h2>
 
 현재 SI업체로부터 탈출에 성공해서 프론트엔드 개발자로 일하고 있습니다. 지금부터 SI업체에서의 경험들과 어떤 계기로 탈출을 해야겠다는 결심이 생겼는지, 그리고 얼마나 노력을 해서 성공했는지에 관해 이야기를 해보려고 합니다.
 
