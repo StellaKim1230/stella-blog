@@ -55,7 +55,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #161b22;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -144,11 +144,7 @@ h6 {
   font-size: var(--fontSize-1);
 }
 
-h1 > a {
-  color: inherit;
-  text-decoration: none;
-}
-
+h1 > a,
 h2 > a,
 h3 > a,
 h4 > a,
@@ -234,11 +230,6 @@ a {
   color: var(--color-primary);
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
 /* Custom classes */
 
 .global-wrapper {
@@ -248,7 +239,7 @@ a:focus {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-12);
 }
 
 .global-header {

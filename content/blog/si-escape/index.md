@@ -1,5 +1,6 @@
 ---
 title: SI 탈출 성공 스토리
+date: "2019-01-01"
 meta:
   - name: description
     content: SI업체 탈출에 성공하다

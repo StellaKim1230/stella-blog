@@ -1,5 +1,6 @@
 ---
-title: Flex(Flexible Box)
+title: Flex (Flexible Box)
+date: "2021-05-02"
 meta:
   - name: description
     content: Flexbox는 행과 열 형태로 배치하는 일차원 레이아웃이다.
@@ -10,9 +11,6 @@ meta:
 ---
 
 CSS의 flex는 엘리먼트들의 크기, 위치를 쉽게 잡아주고 많은 레이아웃 작업을 쉽게 만들어주는 도구이다.
-
-## 소개 및 구성
-
 flexbox로 레이아웃을 구성하기 위해서는, 먼저 어떤 요소들을 flexbox 레이아웃 요소들로 구성할지 선택해야 한다. flexbox 레이아웃의 영향을 주고 싶은 요소의 부모 요소에 `display: flex` 값을 지정해줘야 한다.
 
 <center>

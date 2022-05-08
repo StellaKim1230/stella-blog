@@ -1,5 +1,6 @@
 ---
 title: Trie 알고리즘
+date: "2020-11-12"
 meta:
   - name: description
     content: 트라이 알고리즘, trie 알고리즘, Trie 알고리즘
