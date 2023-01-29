@@ -1,6 +1,7 @@
 ---
 title: 2019년 회고록
 date: "2020-01-01"
+description: "2019년을 돌아본다."
 meta:
   - name: description
     content: 2019년 회고록
