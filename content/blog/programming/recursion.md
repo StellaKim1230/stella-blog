@@ -1,6 +1,7 @@
 ---
 title: 재귀함수
 date: "2020-07-12"
+description: "반복문(Iteration), recursion, tail recursion 정리. recursion: 하나의 함수가 자신을 다시 호출하여 반복되는 작업을 수행한다."
 meta:
   - name: description
     content: Description of Recursion and Tail Recursion

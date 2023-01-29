@@ -1,6 +1,7 @@
 ---
 title: Trie 알고리즘
 date: "2020-11-12"
+description: "트라이(Trie)란 문자열을 저장하고 효율적으로 탐색하기 위한 트리 형태의 자료구조입니다. 트리 형태의 자료구조는 다음과 같은 그림으로 이루어집니다."
 meta:
   - name: description
     content: 트라이 알고리즘, trie 알고리즘, Trie 알고리즘
