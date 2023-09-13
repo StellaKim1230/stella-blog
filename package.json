@@ -7,6 +7,9 @@
     "name": "Stella Kim",
     "email": "stellakim1230@gmail.com"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "gatsby": "^4.4.0",
     "gatsby-plugin-feed": "^4.4.0",
