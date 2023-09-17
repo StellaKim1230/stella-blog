@@ -32,6 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          // const series = post.frontmatter.series
 
           return (
             <li key={post.fields.slug}>
@@ -84,6 +85,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          series
         }
       }
     }

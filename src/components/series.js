@@ -15,14 +15,8 @@ const CategoryButton = styled.button`
 const Series = () => {
   return (
     <Contanier>
-      <CategoryButton onClick={() => navigate(`/?series=http`)}>
-        HTTP
-      </CategoryButton>
-      <CategoryButton onClick={() => navigate(`/?series=etc`)}>
-        ETC
-      </CategoryButton>
-      <CategoryButton onClick={() => navigate(`/?series=http`)}>
-        회고록
+      <CategoryButton onClick={() => navigate(`/?series=network`)}>
+        Network
       </CategoryButton>
     </Contanier>
   )
