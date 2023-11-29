@@ -8,7 +8,7 @@ module.exports = {
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: "stellak59204033",
+      twitter: "stellakim1230",
       github: "StellaKim1230",
     },
   },
