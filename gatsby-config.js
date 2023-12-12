@@ -3,7 +3,6 @@ module.exports = {
     title: `Stella's Blog`,
     author: {
       name: `Ji-Eun Kim Stella.`,
-      // summary: `Written by Ji-Eun Kim Stella.`,
       summary:
         "Striving to provide valuable services to users and interested in writing stable code.",
       catchphrase: "A better programmer tomorrow than today.",

@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { Disqus } from "gatsby-plugin-disqus"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -10,7 +9,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  console.log(data)
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
@@ -60,7 +59,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <footer>
           <Disqus
             config={{
-              url: `${data.site.siteMetadata.url + post.frontmatter.slug}`,
+              url: `${data.site.siteMetadata.url + post.fields.slug}`,
               identifier: `${data.markdownRemark.id}`,
               title: `${post.frontmatter.title}`,
             }}
@@ -89,11 +88,15 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
         slug
+        url
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
