@@ -1,11 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `JiEun's Blog`,
+    title: `Stella's Blog`,
     author: {
-      name: `Kim Ji Eun`,
-      summary: `프론트엔드 개발자 김지은 입니다.`,
+      name: `Ji-Eun Kim Stella.`,
+      // summary: `Written by Ji-Eun Kim Stella.`,
+      summary:
+        "Striving to provide valuable services to users and interested in writing stable code.",
+      catchphrase: "A better programmer tomorrow than today.",
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Personal blog of stella. A programmer with many interests.`,
+    url: "https://www.jieunkim.site/",
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: "stellakim1230",
@@ -15,6 +19,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: "stella-tech-blog",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -67,38 +77,6 @@ module.exports = {
         trackingId: "UA-151965597-1",
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-google-tagmanager",
-    //   options: {
-    //     id: "GTM-MFQD3FM",
-
-    //     // Include GTM in development.
-    //     //
-    //     // Defaults to false meaning GTM will only be loaded in production.
-    //     includeInDevelopment: false,
-
-    //     // datalayer to be set before GTM is loaded
-    //     // should be an object or a function that is executed in the browser
-    //     //
-    //     // Defaults to null
-    //     defaultDataLayer: { platform: "gatsby" },
-
-    //     // Specify optional GTM environment details.
-    //     // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-    //     // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-    //     // dataLayerName: "YOUR_DATA_LAYER_NAME",
-
-    //     // Name of the event that is triggered
-    //     // on every Gatsby route change.
-    //     //
-    //     // Defaults to gatsby-route-change
-    //     // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
-    //     // Defaults to false
-    //     enableWebVitalsTracking: true,
-    //     // Defaults to https://www.googletagmanager.com
-    //     selfHostedOrigin: "https://www.googletagmanager.com",
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -121,7 +99,7 @@ module.exports = {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  url: site.siteMetadata.url + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
                 })
