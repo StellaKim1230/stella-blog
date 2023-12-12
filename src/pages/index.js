@@ -86,7 +86,6 @@ export const pageQuery = graphql`
           title
           description
           series
-          slug
         }
       }
     }
