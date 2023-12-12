@@ -19,6 +19,7 @@ const Bio = () => {
           author {
             name
             summary
+            catchphrase
           }
           social {
             twitter
@@ -44,25 +45,29 @@ const Bio = () => {
         quality={95}
         alt="Profile Pic"
       />
-      {author?.name && (
-        <p style={{ display: "flex", alignItems: "center" }}>
-          {author?.summary || null}
-          <a
-            href={`https://twitter.com/${social?.twitter || ``}`}
-            target="_blank"
-            style={{ height: 30 }}
-          >
-            <Twitter />
-          </a>
-          <a
-            href={`https://github.com/${social?.github || ``}`}
-            target="_blank"
-            style={{ height: 30 }}
-          >
-            <Github />
-          </a>
-        </p>
-      )}
+      <div>
+        <>
+          <p style={{ display: "flex", alignItems: "center" }}>
+            {author?.catchphrase || null} Written by&nbsp;
+            <strong>{author?.name}</strong>
+          </p>
+          <p>{author?.summary || null}</p>
+        </>
+        <a
+          href={`https://twitter.com/${social?.twitter || ``}`}
+          target="_blank"
+          style={{ height: 30 }}
+        >
+          <Twitter />
+        </a>
+        <a
+          href={`https://github.com/${social?.github || ``}`}
+          target="_blank"
+          style={{ height: 30 }}
+        >
+          <Github />
+        </a>
+      </div>
     </div>
   )
 }

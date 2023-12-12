@@ -18,6 +18,7 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            url
             social {
               twitter
               github
@@ -30,6 +31,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const url = site.siteMetadata?.url
 
   return (
     <Helmet
@@ -51,6 +53,7 @@ const Seo = ({ description, lang, meta, title }) => {
           property: `og:description`,
           content: metaDescription,
         },
+        { property: `og:url`, content: url },
         {
           property: `og:type`,
           content: `website`,
