@@ -1,16 +1,20 @@
-import { Disqus } from "gatsby-plugin-disqus"
-// type Props = {
-//   siteUrl: string
-//   path: string
-//   title: string
-// }
-const Comment = (siteUrl, path, title) => {
+import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+
+const Comment = () => {
   const config = {
-    url: `${siteUrl}${path}`, // 페이지 주소
-    identifier: path, // 페이지의 유니크한 값
-    title, // 페이지 제목
+    url,
+    identifier,
+    title,
   }
-  return <Disqus config={config} />
+
+  // return <Disqus config={config} />
+  return (
+    <>
+      <CommentCount config={disqusConfig} placeholder={"..."} />
+      /* Post Contents */
+      <Disqus config={disqusConfig} />
+    </>
+  )
 }
 
 export default Comment
