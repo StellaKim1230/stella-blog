@@ -48,7 +48,7 @@ const Bio = () => {
       />
       <div>
         <>
-          <p style={{ display: "flex", alignItems: "center" }}>
+          <p style={{ alignItems: "center" }}>
             {author?.catchphrase || null} Written by&nbsp;
             <strong>{author?.name}</strong>
           </p>

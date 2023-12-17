@@ -2,18 +2,6 @@
 @import "./font.css";
 
 :root {
-  --maxWidth-none: "none";
-  --maxWidth-xs: 20rem;
-  --maxWidth-sm: 24rem;
-  --maxWidth-md: 28rem;
-  --maxWidth-lg: 32rem;
-  --maxWidth-xl: 36rem;
-  --maxWidth-2xl: 42rem;
-  --maxWidth-3xl: 48rem;
-  --maxWidth-4xl: 56rem;
-  --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
-  --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -35,26 +23,11 @@
     Times, serif;
   --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
-  --fontWeight-normal: 400;
-  --fontWeight-medium: 500;
-  --fontWeight-semibold: 600;
-  --fontWeight-bold: 700;
-  --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
-  --fontSize-root: 16px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
-  --fontSize-0: 0.833rem;
-  --fontSize-1: 1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
   --color-primary: #161b22;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
@@ -73,14 +46,14 @@
 
 html {
   line-height: var(--lineHeight-normal);
-  font-size: var(--fontSize-root);
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: var(--font-body);
-  font-size: var(--fontSize-1);
+  font-size: 16px;
   color: var(--color-text);
 }
 
@@ -114,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-bold);
+  font-weight: bold;
   color: var(--color-heading);
 }
 
@@ -185,8 +158,8 @@ ol {
 
 ul li,
 ol li {
-  padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
+  padding-left: 0;
+  /* margin-bottom: 32px; */
 }
 
 li > p {
@@ -208,7 +181,7 @@ blockquote {
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
+  font-size: 18px;
   font-style: italic;
   margin-bottom: var(--spacing-8);
 }
@@ -242,9 +215,9 @@ a {
 /* Custom classes */
 
 .global-wrapper {
-  margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  margin: 0 auto;
+  max-width: 704px;
+  padding: 40px 24px;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -261,7 +234,6 @@ a {
 
 .post-list-item {
   margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
 }
 
 .post-list-item p {
@@ -269,26 +241,26 @@ a {
 }
 
 .post-list-item h2 {
-  font-size: var(--fontSize-4);
+  font-size: 24px;
   color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: 4px;
   margin-top: var(--spacing-0);
 }
 
 .post-list-item header {
-  margin-bottom: var(--spacing-4);
+  margin-bottom: 9px;
 }
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
+  font-weight: bold;
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-2);
+  font-size: 24px;
 }
 
 .bio {
   display: flex;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: 40px;
 }
 
 .bio p {
@@ -307,7 +279,7 @@ a {
 }
 
 .blog-post header p {
-  font-size: var(--fontSize-2);
+  font-size: 18px;
   font-family: var(--font-heading);
 }
 
