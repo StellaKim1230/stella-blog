@@ -119,29 +119,29 @@ h6 {
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
 }
 
 h2 {
-  font-size: var(--fontSize-5);
+  font-size: 30px;
 }
 
 h3 {
-  font-size: var(--fontSize-4);
+  font-size: 24px;
 }
 
 h4 {
-  font-size: var(--fontSize-3);
+  font-size: 20px;
 }
 
 h5 {
-  font-size: var(--fontSize-2);
+  font-size: 18px;
 }
 
 h6 {
-  font-size: var(--fontSize-1);
+  font-size: 16px;
 }
 
 h1 > a,
@@ -252,11 +252,10 @@ a {
 }
 
 .global-header {
-  margin-bottom: var(--spacing-12);
+  margin-bottom: 40px;
 }
 
 .main-heading {
-  font-size: var(--fontSize-7);
   margin: 0;
 }
 
