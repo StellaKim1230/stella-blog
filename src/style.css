@@ -282,6 +282,15 @@ a {
   font-size: 16px;
 }
 
+.blog-post li {
+  margin-bottom: 12px;
+}
+
+.blog-post li > ul {
+  margin-left: 32px;
+  margin-top: 8px;
+}
+
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }
