@@ -1,6 +1,6 @@
 ---
 title: 변수란 무엇인가?
-date: "2023-12-26"
+date: "2023-12-27"
 description: "모던 자바스크립트 Deep Dive 4장. 변수에 대해 정리한 글입니다."
 meta:
   - name: description
