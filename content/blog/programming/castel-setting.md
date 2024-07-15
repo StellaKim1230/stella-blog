@@ -22,15 +22,29 @@ meta:
 [위키백과](https://en.wikipedia.org/wiki/Monorepo)에서 Monorepo는 **여러 프로젝트의 코드를 동일한 저장소에 저장하는 소프트웨어 개발 전략**이라고 정의하고 있다.
 Monorepo에 대해서는 설명을 잘 해 놓은 글들이 많기 때문에, 이 글에서는 자세히 다루지는 않는다.
 
-프로젝트 구조를 확인하면 다음과 같다.
+프로젝트 구조를 확인하면 다음과 같다. apps 디렉토리의 경우, 빌드 및 실행이 가능한 애플리케이션을 위치시켰다. (server, web)
 
 ```bash
-castel-account-book
 ├─ apps
 │ ├─ server
+│ │ ├─ package.json
+│ │ ├─ dist
+│ │ │  └─ 빌드된 파일들
 │ │ ├─ src
+│ │ │  └─ main.ts
 │ │ ├─ prisma
 │ ├─ web
+│ │ ├─ package.json
+│ │ ├─ build
+│ │ │  └─ 빌드된 파일들 - 앱의 서버 버전
+│ │ ├─ public/build
+│ │ │  └─ 빌드된 파일들 - 앱의 브라우저 버전
+│ │ ├─ app
+│ │ │ ├─ routes
+│ │ │ │ └─ _index.tsx
+│ │ ├─ entry.client.tsx
+│ │ ├─ entry.server.tsx
+│ │ └─ root.tsx
 ├─ .dockerignore
 ├─ .gitignore
 ├─ docker-compose.yaml
@@ -40,13 +54,21 @@ castel-account-book
 └─ README.md
 ```
 
-## Server
+## Server 에서 사용하는 기술
 
-NestJs, Fastify, Prisma, SQLite
+### NestJs
 
-## Web
+NestJs는 Node.js 서버 측 애플리케이션을 구축하기 위한 프레임워크이다.
 
-Remix
+### Fastify
+
+### Prisma
+
+### SQLite
+
+## Web 에서 사용하는 기술
+
+### Remix
 
 ## 그 다음 포스팅
 
